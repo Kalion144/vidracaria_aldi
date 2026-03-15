@@ -43,8 +43,7 @@ const ServicesSection = () => {
             <button
               key={service.title}
               onClick={() => setOpenService(i)}
-              className="group rounded-xl p-6 text-left border border-gray-300 focus:outline-none focus:ring-2 
-              transition-transform transition-shadow duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0_20px_40px_hsl(152_60%_36%_/_0.15),0_8px_16px_hsl(0_0%_0%_/_0.08)]"
+              className="rounded-xl p-6 text-left border border-gray-300 focus:outline-none focus:ring-2 transition-transform transition-shadow duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0_20px_40px_hsl(152_60%_36%_/_0.15),0_8px_16px_hsl(0_0%_0%_/_0.08)] "
             >
               <div className="w-14 h-14 rounded-xl bg-[#E3F3EC] flex items-center justify-center mb-4 hover:bg-[#25935F]/15 transition-colors duration-300">
                 <service.icon className="w-7 h-7 text-[#25935F] transition-transform duration-300 group-hover:scale-110" />
