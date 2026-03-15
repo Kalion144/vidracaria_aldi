@@ -28,7 +28,8 @@ const DifferentialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
-            Por que escolher a <span className="text-gradient">Aldi Vidros</span>?
+            Por que escolher a <span className="text-gradient">Aldi <span className="text-[#25935F]">Vidros</span>
+            </span>?
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
             Excelência, confiança e inovação em cada projeto.

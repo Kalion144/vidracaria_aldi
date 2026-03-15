@@ -65,13 +65,13 @@ const HeroCarousel = () => {
       {/* Controls */}
       <button
         onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/30 backdrop-blur-sm text-primary-foreground hover:bg-primary/60 transition-all duration-300"
+        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/30 backdrop-blur-sm text-white hover:bg-[#25935F]/60 transition-all duration-300"
       >
         <ChevronLeft size={28} />
       </button>
       <button
         onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/30 backdrop-blur-sm text-primary-foreground hover:bg-primary/60 transition-all duration-300"
+        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/30 backdrop-blur-sm text-white hover:bg-[#25935F]/60 transition-all duration-300"
       >
         <ChevronRight size={28} />
       </button>
