@@ -3,8 +3,6 @@ import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 
-
-
 const slides = [
   { image:"/assets/carousel-1.jpg", title: "Instalação de Box Moderno", desc: "Elegância e segurança para seu banheiro" },
   { image:"/assets/carousel-2.jpg", title: "Fachadas em Blindex", desc: "Sofisticação e resistência para seu negócio" },
@@ -85,7 +83,7 @@ const HeroCarousel = () => {
             key={i}
             onClick={() => setCurrent(i)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              i === current ? "bg-primary w-8" : "bg-primary-foreground/40"
+              i === current ? "bg-green-600 w-8" : "bg-green-400"
             }`}
           />
         ))}
