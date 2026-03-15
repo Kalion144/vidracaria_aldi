@@ -44,17 +44,17 @@ const HeroCarousel = () => {
       <div className="absolute inset-0 flex items-end pb-20 md:pb-28">
         <div className="container mx-auto px-4">
           <div key={current} className="animate-fade-up max-w-2xl">
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-primary-foreground mb-3 drop-shadow-lg">
+            <h2 className="text-3xl md:text-[47px] font-display font-bold text-white mb-3 drop-shadow-lg">
               {slides[current].title}
             </h2>
-            <p className="text-lg md:text-xl text-primary-foreground/80 font-light">
+            <p className="text-lg md:text-xl text-white/80 font-light">
               {slides[current].desc}
             </p>
             <a
               href="https://wa.me/5561996517827"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold glow-primary-hover"
+              className="inline-block mt-6 px-8 py-3 rounded-lg bg-[#25935F] text-white font-semibold transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-[0_0_25px_hsl(152_60%_36%_/_0.4),0_0_50px_hsl(152_60%_36%_/_0.15)]"
             >
               Solicitar Orçamento
             </a>
@@ -83,7 +83,7 @@ const HeroCarousel = () => {
             key={i}
             onClick={() => setCurrent(i)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              i === current ? "bg-green-600 w-8" : "bg-green-400"
+              i === current ? "bg-[#25935F] w-8" : "bg-gray-300"
             }`}
           />
         ))}

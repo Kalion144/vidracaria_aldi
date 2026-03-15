@@ -27,13 +27,13 @@ const ServicesSection = () => {
   const [openService, setOpenService] = useState<number | null>(null);
 
   return (
-    <section id="servicos" className="py-20 bg-background">
+    <section id="servicos" className="py-20 bg-[#f6f7f9]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
             Nossos <span className="text-gradient">Serviços</span>
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
+          <p className="text-gray-500 max-w-xl mx-auto">
             Soluções completas em vidros temperados, espelhos e esquadrias para residências e empresas.
           </p>
         </div>
@@ -41,18 +41,18 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => (
             <button
-              key={i}
+              key={service.title}
               onClick={() => setOpenService(i)}
-              className="group bg-card rounded-xl p-6 text-left border border-border focus:outline-none focus:ring-2 focus:ring-primary/50
+              className="group rounded-xl p-6 text-left border border-gray-300 focus:outline-none focus:ring-2 
               transition-transform transition-shadow duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0_20px_40px_hsl(152_60%_36%_/_0.15),0_8px_16px_hsl(0_0%_0%_/_0.08)]"
             >
-              <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors duration-300">
-                <service.icon className="w-7 h-7 text-primary transition-transform duration-300 group-hover:scale-110" />
+              <div className="w-14 h-14 rounded-xl bg-[#E3F3EC] flex items-center justify-center mb-4 hover:bg-[#25935F]/15 transition-colors duration-300">
+                <service.icon className="w-7 h-7 text-[#25935F] transition-transform duration-300 group-hover:scale-110" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-1">
                 {service.title}
               </h3>
-              <p className="text-sm text-muted-foreground">{service.desc}</p>
+              <p className="text-sm text-gray-500">{service.desc}</p>
             </button>
           ))}
         </div>
@@ -62,7 +62,7 @@ const ServicesSection = () => {
             href="https://wa.me/5561996517827"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold glow-primary-hover"
+            className="inline-block px-8 py-3 rounded-lg bg-primary text-white bg-[#25935F] font-semibold transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-[0_0_25px_hsl(152_60%_36%_/_0.4),0_0_50px_hsl(152_60%_36%_/_0.15)]"
           >
             Ver mais serviços
           </a>
@@ -76,7 +76,7 @@ const ServicesSection = () => {
           onClick={() => setOpenService(null)}
         >
           <div
-            className="bg-card rounded-2xl max-w-lg w-full p-8 relative animate-fade-up shadow-2xl"
+            className="bg-white rounded-2xl max-w-lg w-full p-8 relative animate-fade-up shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -85,23 +85,23 @@ const ServicesSection = () => {
             >
               <X size={20} className="text-muted-foreground" />
             </button>
-            <div className="w-16 h-16 rounded-xl bg-accent flex items-center justify-center mb-5">
+            <div className="w-16 h-16 rounded-xl bg-[#e2f3eb] flex items-center justify-center mb-5">
               {(() => {
                 const Icon = services[openService].icon;
-                return <Icon className="w-8 h-8 text-primary" />;
+                return <Icon className="w-8 h-8 text-[#25935F]" />;
               })()}
             </div>
             <h3 className="text-2xl font-display font-bold text-foreground mb-2">
               {services[openService].title}
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-gray-500 leading-relaxed">
               {services[openService].detail}
             </p>
             <a
               href="https://wa.me/5561996517827"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold glow-primary-hover text-sm"
+              className="inline-block mt-6 px-6 py-2.5 rounded-lg text-sm  bg-[#25935F] text-white font-semibold transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-[0_0_25px_hsl(152_60%_36%_/_0.4),0_0_50px_hsl(152_60%_36%_/_0.15)]"
             >
               Solicitar Orçamento
             </a>

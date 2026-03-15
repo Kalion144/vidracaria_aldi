@@ -29,11 +29,11 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <a href="#" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center font-display font-bold text-primary-foreground text-xl transition-all duration-300 group-hover:glow-primary group-hover:scale-105">
+          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center font-display font-bold text-white text-xl transition-all duration-300 bg-[#259364] hover:shadow-[0_0_20px_hsl(152_60%_36%_/_0.3),0_0_40px_hsl(152_60%_36%_/_0.1)] group-hover:scale-105">
             A
           </div>
-          <span className="text-xl font-bold text-header-foreground tracking-wide">
-            Aldi <span className="text-primary">Vidros</span>
+          <span className="text-xl font-bold text-white tracking-wide">
+            Aldi <span className="text-[#25935F]">Vidros</span>
           </span>
         </a>
 
@@ -43,7 +43,7 @@ const Header = () => {
             <a
               key={item.href}
               href={item.href}
-              className="px-5 py-2 rounded-lg text-sm font-medium text-header-foreground/80 transition-all duration-300 hover:text-primary-foreground hover:bg-primary/20 hover:shadow-[0_0_15px_hsl(152_60%_36%/0.3)] relative"
+              className="px-5 py-2 rounded-lg text-sm font-medium text-white/80 transition-all duration-300 hover:text-white hover:bg-[#25935F]/20 hover:shadow-[0_0_15px_hsl(152_60%_36%/0.3)] relative"
             >
               {item.label}
             </a>
@@ -52,7 +52,7 @@ const Header = () => {
             href="https://wa.me/5561996517827"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 px-5 py-2 rounded-lg text-sm font-semibold bg-primary text-primary-foreground glow-primary-hover"
+            className="ml-2 px-5 py-2 rounded-lg text-sm font-semibold bg-[#25935F] text-white transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-[0_0_25px_hsl(152_60%_36%_/_0.4),0_0_50px_hsl(152_60%_36%_/_0.15)]"
           >
             Orçamento
           </a>
@@ -60,7 +60,7 @@ const Header = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-header-foreground p-2"
+          className="md:hidden text-white p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -75,7 +75,7 @@ const Header = () => {
               key={item.href}
               href={item.href}
               onClick={() => setMobileOpen(false)}
-              className="block px-4 py-3 rounded-lg text-header-foreground/80 hover:text-primary-foreground hover:bg-primary/20 transition-all duration-300"
+              className="block px-4 py-3 rounded-lg text-white/80 hover:text-white hover:bg-[#25935F]/20 transition-all duration-300"
             >
               {item.label}
             </a>
@@ -84,7 +84,7 @@ const Header = () => {
             href="https://wa.me/5561996517827"
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-4 py-3 rounded-lg text-center font-semibold bg-primary text-primary-foreground"
+            className="block px-4 py-3 rounded-lg text-center font-semibold bg-[#25935F] text-white transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-[0_0_25px_hsl(152_60%_36%_/_0.4),0_0_50px_hsl(152_60%_36%_/_0.15)]"
           >
             Orçamento
           </a>

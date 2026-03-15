@@ -2,15 +2,15 @@ import { MapPin } from "lucide-react";
 
 const LocationMap = () => {
   return (
-    <section id="contato" className="py-20 bg-background">
+    <section id="contato" className="py-20 bg-[#f6f7f9]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
             Nossa <span className="text-gradient">Localização</span>
           </h2>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            <MapPin className="w-5 h-5 text-primary" />
-            <p>Guará II QE 40 Loja 1 — Guará, Brasília - DF | CEP: 70297-400</p>
+            <MapPin className="w-5 h-5 text-[#25935F]" />
+            <p className="text-gray-500">Guará II QE 40 Loja 1 — Guará, Brasília - DF | CEP: 70297-400</p>
           </div>
         </div>
 

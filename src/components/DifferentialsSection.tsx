@@ -24,13 +24,13 @@ const DifferentialsSection = () => {
   }, []);
 
   return (
-    <section id="diferenciais" className="py-20 bg-muted/50" ref={ref}>
+    <section id="diferenciais" className="py-20 bg-[#e8eaee80]/50" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
             Por que escolher a <span className="text-gradient">Aldi Vidros</span>?
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
+          <p className="text-gray-500 max-w-xl mx-auto">
             Excelência, confiança e inovação em cada projeto.
           </p>
         </div>
@@ -43,11 +43,11 @@ const DifferentialsSection = () => {
                 visible ? `animate-fade-up animate-fade-up-delay-${i + 1}` : "opacity-0"
               }`}
             >
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
-                <item.icon className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 mx-auto rounded-2xl bg-[#E3F3EC] flex items-center justify-center mb-4">
+                <item.icon className="w-8 h-8 text-[#25935F]" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
