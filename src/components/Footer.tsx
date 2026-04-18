@@ -4,31 +4,35 @@ const Footer = () => {
   return (
     <footer className="bg-[var(--bgfooter)] text-footer-foreground py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+          {/* Catalog */}
+          <div>
+            <h4 className="font-semibold mb-4 text-white/80">Catálogo</h4>
+            <ul className="space-y-2 text-sm  text-white/60">
+              {["Blindex", "Espelhos", "Películas", "Esquadrias", "Pergolados", "Guarda Corpo", "Box"].map((item) => (
+                <li key={item}>
+                  <a href="#catalogo" className="hover:text-[#259364] transition-colors">{item}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-[#259364] flex items-center justify-center font-display font-bold text-white text-xl">
-                A
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-8 rounded-lg bg-[#259364]  flex items-center justify-center">
+                <span className="text-white font-display font-bold text-sm">AV</span>
               </div>
-              <span className="text-xl font-bold tracking-wide text-white">
+              <span className="font-display font-bold text-lg text-white">
                 Aldi <span className="text-[#259364]">Vidros</span>
               </span>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Soluções completas em vidros temperados, espelhos e esquadrias em Brasília - DF.
+              Soluções premium em vidro e alumínio sob medida. Qualidade, design e tecnologia para transformar seus espaços.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-semibold mb-4 text-white/80">Links Rápidos</h4>
-            <nav className="space-y-2 text-sm">
-              <a href="#servicos" className="block text-white/60 hover:text-[#259364] transition-colors">Serviços</a>
-              <a href="#diferenciais" className="block text-white/60 hover:text-[#259364] transition-colors">Sobre Nós</a>
-              <a href="#contato" className="block text-white/60 hover:text-[#259364] transition-colors">Contato</a>
-            </nav>
-          </div>
+          </div>          
 
           {/* Social */}
           <div>
@@ -70,6 +74,21 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
+        {/* CTA */}
+          <div>
+            <h4 className="font-display font-semibold text-white/80 mb-4">Orçamento</h4>
+            <p className="text-sm text-white/60 mb-4">
+              Solicite seu orçamento sem compromisso. Atendemos projetos residenciais e comerciais.
+            </p>
+            <a href="#catalogo" className="bg-[#259364] mt-4 rounded-full p-3 text-sm w-full text-center text-white">
+              Solicitar Orçamento
+            </a>
+          </div>
+        
+
+
+          
         </div>
 
         <div className="mt-10 pt-6 border-t border-footer-foreground/10 text-center text-xs text-white/40">
