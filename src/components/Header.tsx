@@ -54,7 +54,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="ml-2 px-5 py-2 rounded-lg text-sm font-semibold bg-[#25935F] text-white transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-[0_0_25px_hsl(152_60%_36%_/_0.4),0_0_50px_hsl(152_60%_36%_/_0.15)]"
           >
-            Orçamento
+            Nosso Catálogo
           </a>
         </nav>
 
