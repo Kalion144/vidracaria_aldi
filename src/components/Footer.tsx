@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
 
-        {/* CTA */}
+        {/* SOLICITRA ORÇAMENTO */}
           <div>
             <h4 className="font-display font-semibold text-white/80 mb-4">Orçamento</h4>
             <p className="text-sm text-white/60 mb-4">
@@ -85,10 +85,6 @@ const Footer = () => {
               Solicitar Orçamento
             </a>
           </div>
-        
-
-
-          
         </div>
 
         <div className="mt-10 pt-6 border-t border-footer-foreground/10 text-center text-xs text-white/40">
