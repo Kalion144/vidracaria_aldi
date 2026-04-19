@@ -56,12 +56,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.45 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <a href="#catalogo" className="btn-cta text-base px-8 py-4">
-            Explorar Catálogo
-          </a>
-          <a href="#contato" className="btn-outline-glass text-base px-8 py-4">
-            Fale Conosco
-          </a>
+
         </motion.div>
       </div>
 

@@ -49,7 +49,7 @@ const Filters = ({
         )}
       </div>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 justify-center">
         {/* Materials */}
         <div className="flex items-center gap-2 flex-wrap">
           <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Material:</span>
@@ -59,8 +59,8 @@ const Filters = ({
               onClick={() => onMaterialToggle(m)}
               className={`text-xs px-3 py-1.5 rounded-full transition-all duration-300 ${
                 selectedMaterials.includes(m)
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-muted-foreground hover:text-foreground"
+                  ? "bg-[#259364] text-black"
+                  : "text-black bg-[#E3F3EC] hover:text-[#259364] hover:border-[#E3F3EC]"
               }`}
             >
               {m}
@@ -77,8 +77,8 @@ const Filters = ({
               onClick={() => onColorToggle(c)}
               className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full transition-all duration-300 ${
                 selectedColors.includes(c)
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-muted-foreground hover:text-foreground"
+                  ? "bg-[#259364] text-black"
+                  : "text-black bg-[#E3F3EC] hover:text-[#259364] hover:border-[#E3F3EC]"
               }`}
             >
               <span className="w-2.5 h-2.5 rounded-full border border-white/20" style={{ backgroundColor: getColorHex(c) }} />
@@ -94,7 +94,7 @@ const Filters = ({
               selectedMaterials.forEach(onMaterialToggle);
               selectedColors.forEach(onColorToggle);
             }}
-            className="text-xs text-primary hover:text-primary/80 underline transition-colors"
+            className="text-xs text-[#259364] hover:text-[#146843] underline transition-colors"
           >
             Limpar filtros
           </button>

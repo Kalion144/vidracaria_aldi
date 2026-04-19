@@ -62,7 +62,7 @@ const Index = () => {
       <HeroSection />
 
       {/* Catalog Section */}
-      <section id="catalogo" className="section-padding py-20">
+      <section id="catalogo" className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
