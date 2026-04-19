@@ -1,0 +1,56 @@
+import { motion } from "framer-motion";
+import { categories } from "@/data/catalog-data";
+import {
+  PanelTop, Sparkles, Layers, DoorOpen,
+  Home, Shield, Square, Settings,
+} from "lucide-react";
+
+const iconMap: Record<string, React.ElementType> = {
+  PanelTop, Sparkles, Layers, DoorOpen,
+  Home, Shield, Square, Settings,
+};
+
+interface CategoryMenuProps {
+  activeCategory: string | null;
+  onSelect: (id: string | null) => void;
+}
+
+const CategoryMenu = ({ activeCategory, onSelect }: CategoryMenuProps) => {
+  return (
+    <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-2 -mx-1 px-1">
+      <button
+        onClick={() => onSelect(null)}
+        className={`flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${
+          activeCategory === null
+            ? "bg-primary text-primary-foreground glow-green"
+            : "glass text-muted-foreground hover:text-foreground hover:border-primary/30"
+        }`}
+      >
+        Todos
+      </button>
+      {categories.map((cat, i) => {
+        const Icon = iconMap[cat.icon] || Square;
+        const isActive = activeCategory === cat.id;
+        return (
+          <motion.button
+            key={cat.id}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.05 }}
+            onClick={() => onSelect(cat.id)}
+            className={`flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${
+              isActive
+                ? "bg-primary text-primary-foreground glow-green"
+                : "glass text-muted-foreground hover:text-foreground hover:border-primary/30"
+            }`}
+          >
+            <Icon size={16} />
+            {cat.name}
+          </motion.button>
+        );
+      })}
+    </div>
+  );
+};
+
+export default CategoryMenu;

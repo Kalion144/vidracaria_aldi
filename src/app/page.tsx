@@ -7,6 +7,8 @@ import LocationMap from "@/components/LocationMap";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
+import HeroSection from "@/components/HeroSection";
+
 const Index = () => {
   return (
     <div className="min-h-screen b">
