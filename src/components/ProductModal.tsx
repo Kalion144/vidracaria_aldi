@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, MessageCircle, ExternalLink } from "lucide-react";
 import type { Product } from "@/data/catalog-data";
-import { getWhatsAppLink } from "@/data/catalog-data";
+
 import { FaWhatsapp } from "react-icons/fa";
 interface ProductModalProps {
   product: Product | null;
