@@ -15,7 +15,7 @@ const ProductCard = ({ product, index, onSelect }: ProductCardProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
       layout
-      className="card-premium group cursor-pointer"
+      className="cursor-pointer glass rounded-xl overflow-hidden transition-all duration-500 border border-gray-300 hover:border-[#E3F3EC] duration-300 hover:shadow-[0_0_30px_hsl(152_58%_42%_/_0.2),0_8px_32px_hsl(0_0%_0%_/_0.3)] hover:-translate-y-1"
       onClick={() => onSelect(product)}
     >
       {/* Image */}
@@ -26,7 +26,7 @@ const ProductCard = ({ product, index, onSelect }: ProductCardProps) => {
           loading="lazy"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
         {/* Color dots */}
         <div className="absolute bottom-3 left-3 flex gap-1.5">
@@ -43,17 +43,17 @@ const ProductCard = ({ product, index, onSelect }: ProductCardProps) => {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="font-display font-semibold text-foreground mb-1.5 group-hover:text-primary transition-colors duration-300">
+        <h3 className="font-display font-semibold text-black mb-1.5 group-hover:text-[#25935F] transition-colors duration-300">
           {product.name}
         </h3>
-        <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+        <p className="text-sm text-black line-clamp-2 mb-3">
           {product.description}
         </p>
 
         {/* Materials */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {product.materials.map((m) => (
-            <span key={m} className="text-xs px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground">
+            <span key={m} className="text-xs px-2 py-0.5 rounded-full bg-[#E3F3EC] text-black">
               {m}
             </span>
           ))}
