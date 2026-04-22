@@ -17,7 +17,7 @@ interface CategoryMenuProps {
 
 const CategoryMenu = ({ activeCategory, onSelect }: CategoryMenuProps) => {
   return (
-    <div className="container mx-auto px-4 flex justify-center gap-2">
+    <div className="container mx-auto px-4 flex gap-2 overflow-x-auto scrollbar-hide scroll-smooth">
       <button
         onClick={() => onSelect(null)}
         className={`flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${
