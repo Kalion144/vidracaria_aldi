@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, MessageCircle, ExternalLink } from "lucide-react";
 import type { Product } from "@/data/catalog-data";
 import { getWhatsAppLink } from "@/data/catalog-data";
-
+import { FaWhatsapp } from "react-icons/fa";
 interface ProductModalProps {
   product: Product | null;
   onClose: () => void;
@@ -36,7 +36,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
             {/* Close */}
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full glass flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full glass flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors"
               aria-label="Fechar"
             >
               <X size={18} />
@@ -53,18 +53,18 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
             </div>
 
             {/* Content */}
-            <div className="p-6 md:p-8">
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">
+            <div className="p-6 md:p-8 bg-[#E3F3EC]">
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-black mb-2">
                 {product.name}
               </h2>
-              <p className="text-muted-foreground mb-6">{product.description}</p>
+              <p className="text-black mb-6">{product.description}</p>
 
               {/* Materials */}
               <div className="mb-6">
-                <h4 className="text-sm font-medium text-foreground mb-2">Materiais</h4>
+                <h4 className="text-sm font-medium text-black mb-2">Materiais</h4>
                 <div className="flex flex-wrap gap-2">
                   {product.materials.map((m) => (
-                    <span key={m} className="px-3 py-1.5 rounded-lg bg-secondary text-secondary-foreground text-sm">
+                    <span key={m} className="px-3 py-1.5 rounded-lg bg-[#93DBA1] text-black text-sm">
                       {m}
                     </span>
                   ))}
@@ -73,15 +73,15 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
 
               {/* Colors */}
               <div className="mb-8">
-                <h4 className="text-sm font-medium text-foreground mb-2">Cores disponíveis</h4>
+                <h4 className="text-sm font-medium text-black mb-2">Cores disponíveis</h4>
                 <div className="flex flex-wrap gap-3">
                   {product.colors.map((color) => (
-                    <div key={color} className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-secondary text-sm">
+                    <div key={color} className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#93DBA1] text-sm">
                       <span
                         className="w-4 h-4 rounded-full border border-white/20"
                         style={{ backgroundColor: getColorHex(color) }}
                       />
-                      <span className="text-secondary-foreground">{color}</span>
+                      <span className="text-black">{color}</span>
                     </div>
                   ))}
                 </div>
@@ -89,14 +89,17 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
 
               {/* CTA */}
               <a
-                href={getWhatsAppLink(product.name)}
+                href={`https://wa.me/5561996517827?text=${encodeURIComponent(
+  `Olá, tenho interesse no produto: ${product.name}`
+)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-cta w-full text-center text-base py-4"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 w-full text-center text-base py-4 bg-[#25935F] text-white 
+                hover:shadow-[0_0_20px_hsl(152_58%_42%_/_0.3)] "
               >
-                <MessageCircle size={18} />
+                <FaWhatsapp size={22} />
                 Solicitar Orçamento
-                <ExternalLink size={14} />
+              
               </a>
             </div>
           </motion.div>

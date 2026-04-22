@@ -83,11 +83,3 @@ export const products: Product[] = [
 export const allMaterials = ["Vidro temperado", "Vidro laminado", "Alumínio", "Inox"];
 export const allColors = ["Incolor", "Fumê", "Verde", "Bronze", "Espelhado", "Preto", "Champagne"];
 
-export const WHATSAPP_NUMBER = "5500000000000";
-
-export function getWhatsAppLink(productName?: string) {
-  const message = productName
-    ? `Olá, gostaria de solicitar orçamento para ${productName}.`
-    : "Olá, gostaria de solicitar um orçamento.";
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-}
