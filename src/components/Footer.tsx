@@ -29,7 +29,7 @@ const Footer = () => {
                 Aldi <span className="text-[#259364]">Vidros</span>
               </span>
             </div>
-            <p className="text-sm text-gray-500 leading-relaxed">
+            <p className="text-sm text-gray-300 leading-relaxed">
               Soluções premium em vidro e alumínio sob medida. Qualidade, design e tecnologia para transformar seus espaços.
             </p>
           </div>          
