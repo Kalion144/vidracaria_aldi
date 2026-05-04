@@ -12,13 +12,16 @@ interface FiltersProps {
 
 function getColorHex(name: string): string {
   const map: Record<string, string> = {
-    Incolor: "#e0e0e0",
-    Fumê: "#555555",
-    Verde: "#2a7d4f",
-    Bronze: "#8B6914",
-    Espelhado: "#c0c0c0",
-    Preto: "#1a1a1a",
-    Champagne: "#c4a35a",
+    Incolor:            "#e0e0e0",
+    Fumê:               "#555555",
+    Verde:              "#2a7d4f",
+    Bronze:             "#8B6914",
+    Espelhado:          "#c0c0c0",
+    "Espelhado Bronze": "#7a5c1e",
+    Preto:              "#1a1a1a",
+    Branco:             "#f5f5f5",
+    "Natural Fosco":    "#a0a0a0",
+    Prata:              "#d4d4d4",
   };
   return map[name] || "#999";
 }
@@ -59,8 +62,8 @@ const Filters = ({
               onClick={() => onMaterialToggle(m)}
               className={`text-xs px-3 py-1.5 rounded-full transition-all duration-300 ${
                 selectedMaterials.includes(m)
-                  ? "bg-[#259364] text-black"
-                  : "text-black bg-[#E3F3EC] hover:text-[#259364] hover:border-[#E3F3EC]"
+                  ? "bg-[#259364] text-white"
+                  : "text-black bg-[#E3F3EC] hover:text-[#259364]"
               }`}
             >
               {m}
@@ -77,11 +80,14 @@ const Filters = ({
               onClick={() => onColorToggle(c)}
               className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full transition-all duration-300 ${
                 selectedColors.includes(c)
-                  ? "bg-[#259364] text-black"
-                  : "text-black bg-[#E3F3EC] hover:text-[#259364] hover:border-[#E3F3EC]"
+                  ? "bg-[#259364] text-white"
+                  : "text-black bg-[#E3F3EC] hover:text-[#259364]"
               }`}
             >
-              <span className="w-2.5 h-2.5 rounded-full border border-white/20" style={{ backgroundColor: getColorHex(c) }} />
+              <span
+                className="w-2.5 h-2.5 rounded-full border border-black/10"
+                style={{ backgroundColor: getColorHex(c) }}
+              />
               {c}
             </button>
           ))}
