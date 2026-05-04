@@ -1,4 +1,4 @@
-import { Montserrat } from "next/font/google";
+import { Montserrat, Cormorant_SC } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -7,7 +7,11 @@ const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-
+const cormorantSC = Cormorant_SC({
+  subsets: ["latin"],
+  variable: "--font-brand",
+  weight: ["400", "600", "700"],
+});
 
 export default function RootLayout({
   children,
@@ -17,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${montserrat.variable} antialiased`}
+        className={`${montserrat.variable} ${cormorantSC.variable} antialiased`}
       >
         {children}
       </body>

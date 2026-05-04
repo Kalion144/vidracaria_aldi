@@ -1,4 +1,5 @@
 import { Mail, Phone, Instagram, Facebook } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -22,10 +23,15 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-[#259364]  flex items-center justify-center">
-                <span className="text-white font-display font-bold text-sm">AV</span>
-              </div>
-              <span className="font-display font-bold text-lg text-white">
+              <Image
+                src="/assets/Logo Aldi.png"
+                alt="Aldi Vidros"
+                width={52}
+                height={52}
+                className="drop-shadow-[0_0_4px_#25935F]"
+                style={{ mixBlendMode: "screen" }}
+              />
+              <span className="font-[family-name:var(--font-brand)] text-2xl font-semibold text-white tracking-wide">
                 Aldi <span className="text-[#259364]">Vidros</span>
               </span>
             </div>
