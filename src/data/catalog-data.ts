@@ -59,9 +59,10 @@ export const products: Product[] = [
     colors: alViFlat,
     colorGroups: alViGroups,
     images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&h=400&fit=crop",
+      "/assets/janela-blindex-aprimorada.png",
+      "/assets/janela-blindex-bronze-fiel-aprimorada.png",
+      "/assets/OIP.webp",
+      "/assets/D_NQ_NP_767470-MLB75994604476_052024-O-janela-de-blindex-aluminio-vidro-temperado-100-x-100-verde.webp",
     ],
   },
   {
