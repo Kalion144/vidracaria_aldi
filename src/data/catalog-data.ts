@@ -120,6 +120,7 @@ export const products: Product[] = [
     colors: alViFlat,
     colorGroups: alViGroups,
     images: [
+      "/assets/fechamento 1.png",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
