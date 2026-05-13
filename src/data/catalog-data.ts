@@ -61,8 +61,8 @@ export const products: Product[] = [
     images: [
       "/assets/janela-blindex-aprimorada.png",
       "/assets/janela-blindex-bronze-fiel-aprimorada.png",
-      "/assets/OIP.webp",
-      "/assets/D_NQ_NP_767470-MLB75994604476_052024-O-janela-de-blindex-aluminio-vidro-temperado-100-x-100-verde.webp",
+      "/assets/janela-blindex-preta-aprimorada.png",
+      "/assets/janela-blindex-verde-aprimorada.png",
     ],
   },
   {
