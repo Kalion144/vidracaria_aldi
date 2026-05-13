@@ -63,6 +63,7 @@ export const products: Product[] = [
       "/assets/janela-blindex-bronze-fiel-aprimorada.png",
       "/assets/janela-blindex-preta-aprimorada.png",
       "/assets/janela-blindex-verde-aprimorada.png",
+      "/assets/janela-blindex-fume-flores-aprimorada.png",
     ],
   },
   {
