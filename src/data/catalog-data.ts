@@ -59,11 +59,11 @@ export const products: Product[] = [
     colors: alViFlat,
     colorGroups: alViGroups,
     images: [
-      "/assets/janelas/janela-blindex-aprimorada.png",
-      "/assets/janelas/janela-blindex-bronze-fiel-aprimorada.png",
-      "/assets/janelas/janela-blindex-preta-aprimorada.png",
-      "/assets/janelas/janela-blindex-verde-aprimorada.png",
-      "/assets/janelas/janela-blindex-fume-flores-aprimorada.png",
+      "/assets/janelas blindex/janela-blindex-aprimorada.png",
+      "/assets/janelas blindex/janela-blindex-bronze-fiel-aprimorada.png",
+      "/assets/janelas blindex/janela-blindex-preta-aprimorada.png",
+      "/assets/janelas blindex/janela-blindex-verde-aprimorada.png",
+      "/assets/janelas blindex/janela-blindex-fume-flores-aprimorada.png",
     ],
   },
   {
@@ -75,9 +75,10 @@ export const products: Product[] = [
     colors: alViFlat,
     colorGroups: alViGroups,
     images: [
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
+      "/assets/Portas blindex/porta-correr-rede-aprimorada.png",
+      "/assets/Portas blindex/porta-vidro-fosco-aprimorada.png",
+      "/assets/Portas blindex/porta-vidro-madeira-aprimorada.png",
+      "/assets/Portas blindex/porta-vidro-pivotante-aprimorada.png",
     ],
   },
   {

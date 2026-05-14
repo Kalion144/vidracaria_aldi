@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk ls *)",
+      "PowerShell(Get-ChildItem -Recurse \"c:\\\\Users\\\\dhiog\\\\Documents\\\\GitHub\\\\vidracaria_aldi\\\\public\\\\assets\" | ForEach-Object { $_.FullName })"
+    ]
+  }
+}
