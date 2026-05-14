@@ -59,11 +59,11 @@ export const products: Product[] = [
     colors: alViFlat,
     colorGroups: alViGroups,
     images: [
-      "/assets/janela-blindex-aprimorada.png",
-      "/assets/janela-blindex-bronze-fiel-aprimorada.png",
-      "/assets/janela-blindex-preta-aprimorada.png",
-      "/assets/janela-blindex-verde-aprimorada.png",
-      "/assets/janela-blindex-fume-flores-aprimorada.png",
+      "/assets/janelas/janela-blindex-aprimorada.png",
+      "/assets/janelas/janela-blindex-bronze-fiel-aprimorada.png",
+      "/assets/janelas/janela-blindex-preta-aprimorada.png",
+      "/assets/janelas/janela-blindex-verde-aprimorada.png",
+      "/assets/janelas/janela-blindex-fume-flores-aprimorada.png",
     ],
   },
   {
@@ -120,7 +120,7 @@ export const products: Product[] = [
     colors: alViFlat,
     colorGroups: alViGroups,
     images: [
-      "/assets/fechamento 1.png",
+      "/assets/fechamentos/fechamento-1.png",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
