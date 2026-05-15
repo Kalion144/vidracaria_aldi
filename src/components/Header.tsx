@@ -4,10 +4,13 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isCatalog = pathname === "/catalog";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -29,19 +32,16 @@ const Header = () => {
           : "bg-[var(--bgheader)]/80 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
+      <div className="container mx-auto flex items-center justify-between px-4 py-1">
         <Link href="/" className="flex items-center gap-2 group">
           <Image
             src="/assets/Logo Aldi.png"
             alt="Aldi Vidros"
-            width={64}
-            height={64}
+            width={80}
+            height={80}
             className="transition-all duration-300 group-hover:scale-105 drop-shadow-[0_0_4px_#25935F]"
             style={{ mixBlendMode: "screen" }}
           />
-          <span className="font-[family-name:var(--font-brand)] text-2xl font-semibold text-white tracking-wide leading-tight">
-            Aldi <span className="text-[#25935F]">Vidros</span>
-          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -56,11 +56,11 @@ const Header = () => {
             </a>
           ))}
           <Link
-            href="/catalog"
+            href={isCatalog ? "/" : "/catalog"}
             rel="noopener noreferrer"
             className="ml-2 px-5 py-2 rounded-lg text-sm font-semibold bg-[#25935F] text-white transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-[0_0_25px_hsl(152_60%_36%_/_0.4),0_0_50px_hsl(152_60%_36%_/_0.15)]"
           >
-            Nosso Catálogo
+            {isCatalog ? "Menu Principal" : "Nosso Catálogo"}
           </Link>
         </nav>
 

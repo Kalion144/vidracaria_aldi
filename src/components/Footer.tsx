@@ -14,7 +14,7 @@ const catalogLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--bgfooter)] text-footer-foreground py-12">
+    <footer className="bg-(--bgfooter) text-footer-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
@@ -41,14 +41,11 @@ const Footer = () => {
               <Image
                 src="/assets/Logo Aldi.png"
                 alt="Aldi Vidros"
-                width={52}
-                height={52}
+                width={96}
+                height={96}
                 className="drop-shadow-[0_0_4px_#25935F]"
                 style={{ mixBlendMode: "screen" }}
               />
-              <span className="font-[family-name:var(--font-brand)] text-2xl font-semibold text-white tracking-wide">
-                Aldi <span className="text-[#259364]">Vidros</span>
-              </span>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
               Soluções premium em vidro e alumínio sob medida. Qualidade, design e tecnologia para transformar seus espaços.
