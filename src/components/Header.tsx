@@ -87,11 +87,11 @@ const Header = () => {
             </a>
           ))}
           <Link
-            href="/catalog"
+            href={isCatalog ? "/" : "/catalog"}
             rel="noopener noreferrer"
             className="block px-4 py-3 rounded-lg text-center font-semibold bg-[#25935F] text-white transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:shadow-[0_0_25px_hsl(152_60%_36%_/_0.4),0_0_50px_hsl(152_60%_36%_/_0.15)]"
           >
-            Nosso Catálogo
+            {isCatalog ? "Menu Principal" : "Nosso Catálogo"}
           </Link>
         </nav>
       )}
