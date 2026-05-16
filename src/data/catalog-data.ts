@@ -76,6 +76,7 @@ export const products: Product[] = [
     colorGroups: alViGroups,
     images: [
       "/assets/Portas blindex/porta-correr-rede-aprimorada.png",
+      "/assets/Portas blindex/porta-correr-fina-aprimorada.png",
       "/assets/Portas blindex/porta-vidro-fosco-aprimorada.png",
       "/assets/Portas blindex/porta-vidro-madeira-aprimorada.png",
       "/assets/Portas blindex/porta-vidro-pivotante-aprimorada.png",
