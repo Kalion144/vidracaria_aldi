@@ -61,7 +61,7 @@ export const products: Product[] = [
     images: [
       "/assets/janelas blindex/janela-blindex-aprimorada.png",
       "/assets/janelas blindex/janela-blindex-bronze-fiel-aprimorada.png",
-      "/assets/janelas blindex/janela-blindex-preta-aprimorada.png",
+      "/assets/janelas blindex/janela-palmeiras-aprimorada.png",
       "/assets/janelas blindex/janela-blindex-verde-aprimorada.png",
       "/assets/janelas blindex/janela-blindex-fume-flores-aprimorada.png",
     ],
