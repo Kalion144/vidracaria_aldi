@@ -33,6 +33,9 @@ const alViGroups: ColorGroup[] = [
 
 const mirrorMaterials = ["Espelho Guardian Evolution"];
 const mirrorColors    = ["Prata", "Fumê", "Bronze"];
+const mirrorGroups: ColorGroup[] = [
+  { label: "Cores de Espelho", colors: mirrorColors },
+];
 
 // ── Categorias ──────────────────────────────────────────────────────────────
 export const categories: Category[] = [
@@ -138,8 +141,9 @@ export const products: Product[] = [
     category: "espelhos",
     materials: mirrorMaterials,
     colors: mirrorColors,
+    colorGroups: mirrorGroups,
     images: [
-      "/assets/noimage.png",
+      "/assets/espelho-meialua-aprimorada.png",
       "/assets/noimage.png",
       "/assets/noimage.png",
     ],
@@ -151,6 +155,7 @@ export const products: Product[] = [
     category: "espelhos",
     materials: [...mirrorMaterials, "Suporte para LED em Alumínio", "LED (opcional)"],
     colors: mirrorColors,
+    colorGroups: mirrorGroups,
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -164,6 +169,7 @@ export const products: Product[] = [
     category: "espelhos",
     materials: mirrorMaterials,
     colors: mirrorColors,
+    colorGroups: mirrorGroups,
     thicknessOptions: ["0,5mm", "1mm", "2mm", "3mm", "4mm"],
     images: [
       "/assets/noimage.png",
@@ -178,6 +184,7 @@ export const products: Product[] = [
     category: "espelhos",
     materials: mirrorMaterials,
     colors: mirrorColors,
+    colorGroups: mirrorGroups,
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -194,6 +201,7 @@ export const products: Product[] = [
     category: "peliculas",
     materials: ["Película", "Vinil"],
     colors: ["Fumê", "Incolor", "Verde"],
+    colorGroups: [{ label: "Opções de Cor", colors: ["Fumê", "Incolor", "Verde"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -207,6 +215,7 @@ export const products: Product[] = [
     category: "peliculas",
     materials: ["Película", "Vinil"],
     colors: ["Incolor", "Fumê"],
+    colorGroups: [{ label: "Opções de Cor", colors: ["Incolor", "Fumê"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -220,6 +229,7 @@ export const products: Product[] = [
     category: "peliculas",
     materials: ["Película", "Vinil"],
     colors: ["Espelhado", "Espelhado Bronze", "Preto"],
+    colorGroups: [{ label: "Opções de Cor", colors: ["Espelhado", "Espelhado Bronze", "Preto"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -233,6 +243,7 @@ export const products: Product[] = [
     category: "peliculas",
     materials: ["Película", "Vinil"],
     colors: ["Incolor"],
+    colorGroups: [{ label: "Opções de Cor", colors: ["Incolor"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -440,6 +451,7 @@ export const products: Product[] = [
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
     colors: ["Incolor", "Fumê", "Bronze"],
+    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -453,6 +465,7 @@ export const products: Product[] = [
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
     colors: ["Incolor", "Fumê", "Bronze"],
+    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -466,6 +479,7 @@ export const products: Product[] = [
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
     colors: ["Incolor", "Fumê"],
+    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -479,6 +493,7 @@ export const products: Product[] = [
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
     colors: ["Incolor", "Fumê", "Bronze"],
+    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -492,6 +507,7 @@ export const products: Product[] = [
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
     colors: ["Incolor", "Fumê", "Bronze"],
+    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -505,6 +521,7 @@ export const products: Product[] = [
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
     colors: ["Incolor", "Fumê", "Bronze", "Preto"],
+    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze", "Preto"] }],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -518,8 +535,24 @@ export const products: Product[] = [
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
     colors: ["Incolor", "Fumê"],
+    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê"] }],
     images: [
       "/assets/noimage.png",
+      "/assets/noimage.png",
+      "/assets/noimage.png",
+    ],
+  },
+
+  {
+    id: "bx-8",
+    name: "Box de Correr",
+    description: "Box com porta deslizante em vidro temperado e trilho embutido com rolamentos silenciosos. Ideal para banheiros onde não há espaço para abertura convencional. Disponível em versão simples ou dupla folha.",
+    category: "box",
+    materials: ["Vidro Temperado", "Alumínio"],
+    colors: ["Incolor", "Fumê", "Bronze"],
+    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
+    images: [
+      "/assets/banheiro-box-dourado-aprimorada.png",
       "/assets/noimage.png",
       "/assets/noimage.png",
     ],
@@ -579,6 +612,10 @@ export const products: Product[] = [
     category: "sob-demanda",
     materials: ["Vidro Temperado", "Vidro Laminado", "Alumínio"],
     colors: [...alViFlat, "Espelhado", "Espelhado Bronze", "Prata"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: [...viColors, "Espelhado", "Espelhado Bronze", "Prata"] },
+    ],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
