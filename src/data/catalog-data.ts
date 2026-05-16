@@ -157,7 +157,7 @@ export const products: Product[] = [
     colors: mirrorColors,
     colorGroups: mirrorGroups,
     images: [
-      "/assets/noimage.png",
+      "/assets/Espelhos/espelho arredondado led.png",
       "/assets/noimage.png",
       "/assets/noimage.png",
     ],
@@ -450,8 +450,11 @@ export const products: Product[] = [
     description: "Painel único de vidro temperado sem dobradiças, fixado com perfis de alumínio ou silicone estrutural. Ideal para chuveiros com espaço generoso. Fácil limpeza e manutenção zero.",
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
-    colors: ["Incolor", "Fumê", "Bronze"],
-    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
+    colors: [...alColors, "Incolor", "Fumê", "Bronze"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: ["Incolor", "Fumê", "Bronze"] },
+    ],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -464,8 +467,11 @@ export const products: Product[] = [
     description: "Porta de vidro temperado com dobradiças de alumínio e mola de retorno. Abertura de 90° para fora do box. Disponível em versão de canto com 1 ou 2 portas.",
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
-    colors: ["Incolor", "Fumê", "Bronze"],
-    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
+    colors: [...alColors, "Incolor", "Fumê", "Bronze"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: ["Incolor", "Fumê", "Bronze"] },
+    ],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -478,8 +484,11 @@ export const products: Product[] = [
     description: "Sistema dobrável em sanfona que permite abrir o box para dentro ou fora. Ideal para banheiros com espaço limitado onde uma porta convencional não cabe. Perfis em alumínio anodizado.",
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
-    colors: ["Incolor", "Fumê"],
-    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê"] }],
+    colors: [...alColors, "Incolor", "Fumê"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: ["Incolor", "Fumê"] },
+    ],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -492,8 +501,11 @@ export const products: Product[] = [
     description: "Linha leve com vidro 6mm e perfis slim em alumínio. Design clean e minimalista com visual contemporâneo. Instalação rápida e econômica, sem abrir mão da qualidade e da segurança.",
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
-    colors: ["Incolor", "Fumê", "Bronze"],
-    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
+    colors: [...alColors, "Incolor", "Fumê", "Bronze"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: ["Incolor", "Fumê", "Bronze"] },
+    ],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -506,8 +518,11 @@ export const products: Product[] = [
     description: "Configuração em L para banheiros com box de canto. Disponível com porta de abrir, painel fixo ou combinação dos dois. Perfis de alumínio com vedação em borracha PVC de alta durabilidade.",
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
-    colors: ["Incolor", "Fumê", "Bronze"],
-    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
+    colors: [...alColors, "Incolor", "Fumê", "Bronze"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: ["Incolor", "Fumê", "Bronze"] },
+    ],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -520,8 +535,11 @@ export const products: Product[] = [
     description: "Linha premium com perfis ultra-slim em alumínio anodizado e vidro temperado de alta claridade. Dobradiças e puxadores com acabamento em alumínio escovado. Para banheiros que exigem sofisticação e design exclusivo.",
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
-    colors: ["Incolor", "Fumê", "Bronze", "Preto"],
-    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze", "Preto"] }],
+    colors: [...alColors, "Incolor", "Fumê", "Bronze"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: ["Incolor", "Fumê", "Bronze"] },
+    ],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -534,8 +552,11 @@ export const products: Product[] = [
     description: "Box do piso ao teto com vedação total e visual contemporâneo. Elimina respingos, evita mofo nas paredes e facilita a limpeza. Disponível com porta de abrir ou painel fixo.",
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
-    colors: ["Incolor", "Fumê"],
-    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê"] }],
+    colors: [...alColors, "Incolor", "Fumê"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: ["Incolor", "Fumê"] },
+    ],
     images: [
       "/assets/noimage.png",
       "/assets/noimage.png",
@@ -549,8 +570,11 @@ export const products: Product[] = [
     description: "Box com porta deslizante em vidro temperado e trilho embutido com rolamentos silenciosos. Ideal para banheiros onde não há espaço para abertura convencional. Disponível em versão simples ou dupla folha.",
     category: "box",
     materials: ["Vidro Temperado", "Alumínio"],
-    colors: ["Incolor", "Fumê", "Bronze"],
-    colorGroups: [{ label: "Cores de Vidro", colors: ["Incolor", "Fumê", "Bronze"] }],
+    colors: [...alColors, "Incolor", "Fumê", "Bronze"],
+    colorGroups: [
+      { label: "Cores de Alumínio", colors: alColors },
+      { label: "Cores de Vidro",    colors: ["Incolor", "Fumê", "Bronze"] },
+    ],
     images: [
       "/assets/banheiro-box-dourado-aprimorada.png",
       "/assets/noimage.png",
